@@ -1,0 +1,123 @@
+# General
+.DS_Store
+*.log
+*.swp
+*.bak
+*.tmp
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# Node.js/TypeScript
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.npm
+.pnpm
+.yarn-integrity
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+*.mo
+*.pot
+
+# ChromaDB/VectorDB
+chroma_data/
+chroma_storage/
+vector_storage/
+
+# Docker
+docker-compose.override.yml
+docker-data/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# API keys and secrets
+*.key
+*.pem
+*.crt
+*.cert
+
+# Build files
+*.exe
+*.dll
+*.obj
+*.lib
+
+# Editor files
+.ropeproject
+*.sublime-workspace
+*.sublime-project
+
+# System files
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Testing
+junit.xml
+test-results.xml
+
+# Package files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Documentation
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# ML/Data Science
+.mypy_cache/
+.pytest_cache/
+*.ipynb
+*.pickle
+*.h5
+*.hdf5
+*.joblib

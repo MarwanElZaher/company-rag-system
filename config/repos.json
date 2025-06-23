@@ -1,0 +1,97 @@
+{
+    "githubRepositories": [
+        {
+            "owner": "your-company-org",
+            "repo": "frontend-app",
+            "branch": "main",
+            "excludePaths": [
+                "node_modules/**",
+                "dist/**",
+                "build/**",
+                ".git/**",
+                "coverage/**",
+                "*.test.js",
+                "*.spec.js"
+            ]
+        },
+        {
+            "owner": "your-company-org",
+            "repo": "backend-api",
+            "branch": "main",
+            "excludePaths": [
+                "node_modules/**",
+                "dist/**",
+                "build/**",
+                ".git/**",
+                "coverage/**",
+                "vendor/**",
+                "*.test.py",
+                "*.spec.py"
+            ]
+        },
+        {
+            "owner": "your-company-org",
+            "repo": "mobile-app",
+            "branch": "develop",
+            "excludePaths": [
+                "node_modules/**",
+                "android/build/**",
+                "ios/build/**",
+                "*.test.tsx",
+                "*.spec.tsx"
+            ]
+        },
+        {
+            "owner": "your-company-org",
+            "repo": "shared-components",
+            "branch": "main",
+            "excludePaths": [
+                "node_modules/**",
+                "storybook-static/**",
+                "dist/**"
+            ]
+        },
+        {
+            "owner": "your-company-org",
+            "repo": "infrastructure",
+            "branch": "main",
+            "excludePaths": [
+                ".terraform/**",
+                "*.tfstate*",
+                "node_modules/**"
+            ]
+        }
+    ],
+    "localRepositories": [
+        {
+            "name": "local-frontend",
+            "path": "/path/to/your/local/frontend",
+            "excludePaths": [
+                "node_modules/**",
+                "dist/**",
+                "build/**",
+                ".git/**",
+                "coverage/**"
+            ]
+        },
+        {
+            "name": "local-backend",
+            "path": "/path/to/your/local/backend",
+            "excludePaths": [
+                "node_modules/**",
+                "__pycache__/**",
+                "venv/**",
+                ".git/**",
+                "*.pyc"
+            ]
+        }
+    ],
+    "settings": {
+        "syncInterval": "1h",
+        "maxFileSize": "1MB",
+        "batchSize": 50,
+        "retryAttempts": 3,
+        "enableRealTimeSync": true,
+        "enableWebhooks": true
+    }
+}

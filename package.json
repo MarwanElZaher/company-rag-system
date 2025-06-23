@@ -1,0 +1,35 @@
+{
+  "name": "company-rag-system",
+  "version": "1.0.0",
+  "description": "Auto-updating RAG system for company repositories with Gemini LLM",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js start",
+    "dev": "ts-node src/index.ts start",
+    "ask": "ts-node src/index.ts ask",
+    "search": "ts-node src/index.ts search",
+    "stats": "ts-node src/index.ts stats",
+    "sync": "ts-node src/index.ts sync",
+    "sync:github": "ts-node src/index.ts sync github",
+    "sync:local": "ts-node src/index.ts sync local",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rag",
+    "gemini",
+    "github",
+    "knowledge-base",
+    "ai"
+  ],
+  "author": "Your Company",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chokidar": "^1.7.5",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.3"
+  },
+  "dependencies": {
+    "chromadb": "^3.0.4"
+  }
+}
